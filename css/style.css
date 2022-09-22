@@ -1,0 +1,81 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
+
+@import url('components/banner.css');
+@import url('components/card.css');
+@import url('components/cards.css');
+@import url('components/container.css');
+@import url('components/footer.css');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --color-white:#fff;
+  --color-light: rgba(148, 146, 146, 0.6);
+  --color-green: rgb(73, 215, 118);
+  --transition: all 400 ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+
+p {
+  color: var(--color-light);
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+@media screen and (max-width: 600px) {
+  .container {
+      width: var(--container-width-md);
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ======================== */
+@media screen and (max-width: 400px) {
+  .container {
+      width: var(--container-width-sm);
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

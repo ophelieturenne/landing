@@ -1,0 +1,42 @@
+.banner {
+  position: relative;
+  background-image: url(https://source.unsplash.com/random);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0,0,0,1.0);
+}
+
+.banner h1,
+.banner p {
+  color: var(--color-white);
+  margin: 20px;
+}
+
+.banner .banner-container {
+  display: flex;
+  justify-content: center;
+}
+
+#btn {
+  margin: 20px;
+  background-color: var(--color-green);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--color-white);
+}
+
+.banner h1{
+  padding-top: 150px;
+}
+
+#btn:hover {
+  --color-green: rgb(61, 181, 99);
+}

@@ -1,0 +1,30 @@
+footer{
+  background-color: rgb(61, 50, 50);
+  padding-top: 30px;
+  height: 20vh;
+  text-align: center;
+}
+
+footer ul{
+  list-style: none;
+  font-size: 30px;
+  padding-left: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.fa-brands {
+  color: var(--color-green);
+}
+
+.fa-brands:hover {
+  --color-green: rgb(61, 181, 99);
+}
+
+footer p {
+  display: block;
+  margin-right: 20px;
+}
